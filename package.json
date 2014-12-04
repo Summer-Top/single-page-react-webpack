@@ -1,0 +1,27 @@
+{
+  "name": "Webpack-Single-Page-App",
+  "version": "0.1.0",
+  "description": "Single page application built in JavaScript using React, Leaflet, and webpack to build it.",
+  "main": "index.js",
+  "scripts": {
+    "develop": "ENV=develop webpack -p -d --watch",
+    "clean": "rm -rf ./build",
+    "build": "rm -rf ./build && ENV=production webpack -p && cp ./src/index.html ./build/index.html"
+  },
+  "keywords": [
+    "react",
+    "leaflet",
+    "webpack",
+    "single",
+    "page",
+    "app"
+  ],
+  "author": "Robert Winterbottom",
+  "dependencies": {
+    "css-loader": "^0.9.0",
+    "jsx-loader": "^0.12.2",
+    "style-loader": "^0.8.2",
+    "stylus-loader": "^0.4.0"
+  },
+  "license": "MIT"
+}
