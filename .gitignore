@@ -3,3 +3,4 @@ build
 src/app/bundle.js
 src/app/bundle.js.map
 npm-debug.log
+.DS_Store
