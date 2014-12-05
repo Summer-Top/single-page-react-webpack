@@ -3,10 +3,10 @@
 	var React = require('react'),
 			Application = require('./components/Application');
 
-	require('../css/app.styl');
+	require('styl/app.styl');
 
 	var launch = function () {
-			React.renderComponent(new Application(), doc.body);
+		React.renderComponent(new Application(), doc.body);
 	};
 
 	win.requestAnimationFrame = (function () {
@@ -14,10 +14,7 @@
       win.webkitRequestAnimationFrame ||
       win.mozRequestAnimationFrame ||
       win.oRequestAnimationFrame ||
-  		win.msRequestAnimationFrame ||
-  		function (callback) {
-      	window.setTimeout(callback, 1000/60);
-			};
+  		win.msRequestAnimationFrame;
   })();
 
   if (win.requestAnimationFrame) {

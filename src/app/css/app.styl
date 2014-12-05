@@ -1,5 +1,4 @@
-/* Variables */
-$themeBase = #AAA;
+@import "vars"
 
 /* Generic classes */
 .relative
@@ -14,8 +13,7 @@ $themeBase = #AAA;
 .hidden
 	display none
 	
-/* Base */	
-
+/* base css */
 html
 body
 .root
@@ -25,4 +23,29 @@ body
 	margin 0
 	
 .root
-	background $themeBase
+	background $mainBackground
+	
+.application-header
+	position absolute
+	height 75px
+	right 0
+	left 0
+	top 0
+	
+.application-page-container
+	position absolute
+	bottom 100px
+	top 75px
+	right 0
+	left 0
+	
+.application-page
+	height 100%
+	width 100%
+	
+.application-footer
+	position absolute
+	height 100px
+	bottom 0
+	right 0
+	left 0
