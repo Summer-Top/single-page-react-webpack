@@ -12,5 +12,6 @@ var AboutPage = React.createClass({
 	}
 
 });
+
+React.render(<AboutPage />, document.getElementById('about-page'));
 /* jshint ignore:end */
-React.renderComponent(new AboutPage(), document.getElementById('about-page'));

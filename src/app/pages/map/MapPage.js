@@ -18,6 +18,6 @@ var MapPage = React.createClass({
 	}
 
 });
-/* jshint ignore:end */
 
-React.renderComponent(new MapPage(), document.getElementById('map-page'));
+React.render(<MapPage />, document.getElementById('map-page'));
+/* jshint ignore:end */

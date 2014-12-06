@@ -12,5 +12,6 @@ var HomePage = React.createClass({
 	}
 
 });
+
+React.render(<HomePage />, document.getElementById('home-page'));
 /* jshint ignore:end */
-React.renderComponent(new HomePage(), document.getElementById('home-page'));
