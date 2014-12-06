@@ -1,9 +1,7 @@
 /** @jsx React.DOM */
 var React = require('react'),
-		routes = require('utils/Routes');
-
-
-var baseScriptPath = 'app/',
+		routes = require('utils/Routes'),
+		baseScriptPath = 'app/',
 		pages = {};
 
 function loadScript(src) {

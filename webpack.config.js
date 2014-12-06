@@ -1,12 +1,12 @@
-var bundlePath = __dirname + (process.env.ENV === 'develop' ? '/src' : '/build'),
+var bundlePath = __dirname + (process.env.ENV === 'prod' ? '/build' : '/src'),
     webpack = require("webpack");
 
 module.exports = {
 	entry: {
     bundle: "./src/app/js/App.js",
-    mapBundle: "./src/app/pages/map/mapEntry.js",
-    homeBundle: "./src/app/pages/home/homeEntry.js",
-    aboutBundle: "./src/app/pages/about/aboutEntry.js"
+    mapBundle: "./src/app/pages/map/MapPage.js",
+    homeBundle: "./src/app/pages/home/HomePage.js",
+    aboutBundle: "./src/app/pages/about/AboutPage.js"
   },
 
   output: {

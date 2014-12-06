@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
-
+var React = require('react');
 /* jshint ignore:start */
-module.exports = React.createClass({
+var AboutPage = React.createClass({
 
 	render: function () {
 		return (
@@ -13,3 +13,4 @@ module.exports = React.createClass({
 
 });
 /* jshint ignore:end */
+React.renderComponent(new AboutPage(), document.getElementById('about-page'));

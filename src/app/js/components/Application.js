@@ -29,6 +29,7 @@ module.exports = React.createClass({
 		return (
 			<div className="root">
 				<Header />
+				/* Pages Loaded in Content */
 				<Content page={this.state.page} />
 				<Footer />
 			</div>

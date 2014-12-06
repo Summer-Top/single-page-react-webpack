@@ -1,7 +1,11 @@
 /** @jsx React.DOM */
-var MapController = require('./MapController');
+var MapController = require('./MapController'),
+		React = require('react');
+	
+require('styl/map.styl');
+	
 /* jshint ignore:start */
-module.exports = React.createClass({
+var MapPage = React.createClass({
 
 	componentDidMount: function () {
 		MapController.init();
@@ -15,3 +19,5 @@ module.exports = React.createClass({
 
 });
 /* jshint ignore:end */
+
+React.renderComponent(new MapPage(), document.getElementById('map-page'));
