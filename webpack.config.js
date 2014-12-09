@@ -28,6 +28,7 @@ module.exports = {
     alias: {
       'js': __dirname + '/src/app/js',
       'styl': __dirname + '/src/app/css',
+      'pages': __dirname + '/src/app/pages',
       'utils': __dirname + '/src/app/js/utils',
       'leaflet': __dirname + '/src/app/libs/leaflet/leaflet.js',
       'leaflet-css': __dirname + '/src/app/libs/leaflet/leaflet.css'

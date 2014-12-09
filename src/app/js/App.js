@@ -6,7 +6,7 @@
 	require('styl/app.styl');
 
 	var launch = function () {
-		React.renderComponent(new Application(), doc.body);
+		React.render(new Application(), doc.body);
 	};
 
 	win.requestAnimationFrame = (function () {
