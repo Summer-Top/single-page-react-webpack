@@ -14,6 +14,7 @@
 <pre lang="text">
 <code>sudo npm install</code>
 </pre>
+<p>Once you have all the dependencies installed, before you can view it in the browser, you will need to run <code>npm run develop</code> or <code>npm run build</code> to generate the bundles the html and router is expecting to load.</p>
 <h2>Development</h2>
 <p>webpack is configured to run off of npm scripts but you can also just run webpack itself.  For development, run:</p>
 <pre lang="text">
